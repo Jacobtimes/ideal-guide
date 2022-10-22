@@ -1,0 +1,35 @@
+import turtle
+import random
+
+s = turtle.getscreen()
+t = turtle.Turtle()
+
+max_num = 50
+md = 10
+
+turtle.tracer(delay=0)
+turtle.hideturtle()
+
+t.hideturtle()
+
+t.goto(0,0)
+
+#t.dot(20)
+
+for i in range(100):
+    print(random.randint(1,max_num))
+    print(random.randint(1,md))
+
+while True:
+    md = round(max_num / 12)
+    for i in range(10):
+        md = round(max_num / 20)
+        #print(md)
+        t.right(random.randint(0,360))
+        t.forward(random.randint(25,max_num))
+        t.dot(md)
+        t.goto(0,0)
+        
+    print(str(md) + " is the dot size")
+    #md += random.randint(1,5)
+    max_num += random.randint(1,25)
