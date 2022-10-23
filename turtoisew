@@ -1,3 +1,6 @@
+
+#color = ["deep sky blue" , "pale green" , "spring green" , "dark green" , "lime" , "saddle brown" , "red"]
+
 import turtle
 import random
 
